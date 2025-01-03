@@ -16,7 +16,7 @@ const MONGO_URI = process.env.MONGO_URI;
 app.use(express.json());
 
 app.use(cors({
-  origin: 'http://localhost:5173', // Replace with your frontend URL
+  origin: ['http://localhost:5173', 'https://ai-study-planner-frontend.vercel.app/'],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],

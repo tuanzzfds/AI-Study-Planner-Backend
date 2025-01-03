@@ -13,8 +13,6 @@
     }
   ],
   "env": {
-    "MONGO_URI": "@mongo_uri",
-    "FIREBASE_API_KEY": "@firebase_api_key"
-
+    "MONGO_URI": "your_mongo_uri_here"
   }
 }
