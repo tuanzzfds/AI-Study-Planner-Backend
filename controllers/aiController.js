@@ -5,21 +5,7 @@ const Timer = require('../models/Timer'); // Assuming a Timer model exists
 exports.createTask = async (req, res) => {
   try {
     const { title, description, priority, startDate, endDate } = req.body;
-/*************  ✨ Codeium Command ⭐  *************/
-/**
- * Create a new task for the authenticated user.
- * 
- * This function extracts task details from the request body, 
- * including title, description, priority, startDate, and endDate.
- * It associates the task with the user ID from the request object
- * and saves it to the database. Returns a success message and 
- * the created task in the response.
- * 
- * @param {Object} req - The request object containing user and task details.
- * @param {Object} res - The response object used to send back the HTTP response.
- */
-
-/******  cf3e595b-5665-4faa-bd55-11e4032d0dd6  *******/    const userId = req.user.id;
+    const userId = req.user.id;
 
     const newTask = new Task({
       user: userId,
